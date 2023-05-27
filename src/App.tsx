@@ -8,7 +8,7 @@ function App() {
       <div style={{ border: "2px solid orange" }}>
         <h2>Dialog Modal - blocking</h2>
         <p>
-          The other UI is{" "}
+          The page UI is{" "}
           <span style={{ color: "orange" }}>non interactive</span>
         </p>
         <br />
@@ -17,7 +17,7 @@ function App() {
       <br />
       <div style={{ border: "2px solid green" }}>
         <p>
-          The other UI is <span style={{ color: "green" }}>interactive</span>
+          The page UI is <span style={{ color: "green" }}>interactive</span>
         </p>
 
         <h2>Dialog Non Modal - non blocking</h2>

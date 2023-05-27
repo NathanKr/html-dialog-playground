@@ -2,7 +2,6 @@ import { useRef } from "react";
 
 const DialogModel = () => {
   const dialogRef = useRef<HTMLDialogElement>(null);
-  const confirmBtnRef = useRef<HTMLButtonElement>(null);
   const selectElRef = useRef<HTMLSelectElement>(null);
   const outputBoxRef = useRef<HTMLOutputElement>(null);
 
@@ -17,7 +16,8 @@ const DialogModel = () => {
     evt: React.MouseEvent<HTMLButtonElement>
   ) => {
     evt.preventDefault(); // We don't want to submit this fake form
-    dialogRef.current!.close(selectElRef.current!.value); // Have to send the select box value here.
+    // Have to send the select box value here.
+    dialogRef.current!.close(selectElRef.current!.value); 
   };
 
   return (
@@ -27,12 +27,7 @@ const DialogModel = () => {
           <p>
             <label>
               Favorite color:
-              <select
-                ref={selectElRef}
-                onChange={() => {
-                  confirmBtnRef.current!.value = selectElRef.current!.value;
-                }}
-              >
+              <select ref={selectElRef}>
                 <option value="default">Choose…</option>
                 <option>Red</option>
                 <option>Green</option>
@@ -44,11 +39,7 @@ const DialogModel = () => {
             <button value="cancel" formMethod="dialog">
               Cancel
             </button>
-            <button
-              ref={confirmBtnRef}
-              onClick={handleConfirmButtonClose}
-              value="default"
-            >
+            <button onClick={handleConfirmButtonClose} value="default">
               Confirm
             </button>
           </div>
