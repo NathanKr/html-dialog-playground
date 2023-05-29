@@ -1,7 +1,7 @@
 // import "./App.css";
 import DialogModel from "./components/dialog-model";
 import DialogNonModel from "./components/dialog-non-model";
-import DialogModelSimple from "./components/dialog-non-model-simple";
+import DialogModelSimple from "./components/dialog-model-simple";
 
 function App() {
   return (
