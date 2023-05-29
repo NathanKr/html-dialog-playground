@@ -6,7 +6,7 @@ const DialogNonModel = () => {
   return (
     <div>
       <dialog ref={dialogRef}>
-        <p>Greetings, one and all!</p>
+      <p>put here what ever you like</p>
         <form method="dialog">
           <button>OK</button>
         </form>
