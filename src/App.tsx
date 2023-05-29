@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import DialogModel from "./components/dialog-model";
 import DialogNonModel from "./components/dialog-non-model";
 
